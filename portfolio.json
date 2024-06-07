@@ -1,0 +1,45 @@
+{
+    "John Doe": {
+        "uninvested_cash": 50.00,
+        "auto_invest": false,
+        "interest": {
+            "inital_start_date": "2024-03-30"
+        },
+        "stocks": [
+            {
+                "symbol": "BBLU",
+                "tags": ["ETF"],
+                "orders": [
+                    {
+                        "amount": 8,
+                        "purchase_price": 11.03
+                    },
+                    {
+                        "amount": 4,
+                        "purchase_price": 11.28
+                    }
+                ]
+            }
+        ],
+        "crypto": [
+            {
+                "symbol": "BTC",
+                "stop_loss": 0,
+                "orders": [
+                    {
+                        "amount": 0.001,
+                        "purchase_price": 48320.66
+                    }
+                ]
+            },
+            {
+                "symbol": "AVAX",
+                "recommended": true
+            },
+            {
+                "symbol": "SHIB",
+                "recommended": true
+            }
+        ]
+    }
+}

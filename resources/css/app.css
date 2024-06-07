@@ -1,0 +1,177 @@
+:root {
+    --app-background: #191A19;
+    --app-background-dark: #292929;
+    --app-accent-1: #D8E9A8;
+
+    --main-text-grey: #717d90;
+    --main-bg-color: #141d2b;
+    --main-bg-light: #1e293b;
+    --main-bg-lighter: #212c3f;
+    --main-bg-dark: #0e1620;
+    --accent-color: #4700D8;
+    --accent-color-light: #a173ff;
+    --accent-color-light-2: #6526ff;
+    --accent-color-dark: #3b01b3;
+    --white-text: #FFF;
+    --color-random-1: #B9F3E4;
+}
+
+* {
+    /* padding: 0px;
+    margin: 0px; */
+    /* font-family: 'Satoshi', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    color: var(--white-text);
+    scroll-margin-top: 20px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--app-background);
+}
+
+/* App container (This is on all pages) */
+.app {
+    max-width: 700px;
+    margin: 0 auto;
+    animation-delay: 1;
+    animation: fade-in 0.83s ease-in;
+}
+
+.hidden { display: none; }
+
+/* Accent colors */
+.grey { color: grey; }
+.green { color: #5db24c; }
+.red { color: #FF9595; }
+
+.color-accent-1 {
+    color: var(--app-accent-1);
+    background: -webkit-linear-gradient(300deg, var(--app-accent-1), #359522);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glare-silver {
+    color: silver;
+    background: -webkit-linear-gradient(#eaeaea, #7d7d7d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glare-gold {
+    color: gold;
+    background: -webkit-linear-gradient(var(--app-accent-1), orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glare-red {
+    color: red;
+    background: -webkit-linear-gradient(#ff9797, #d44d4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Market Status */
+.market-status,
+.notification-bell {
+    font-size: 14px;
+    margin-top: -8px;
+    width: fit-content;
+    display: inline-block;
+    float: right;
+}
+#market-open {
+    display: none;
+}
+#market-close {
+    opacity: 0;
+}
+
+/* Stock Card */
+.stock-card {
+    position: relative;
+    background-color: #63636336;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+.stock-card .stock-tag {
+    display: inline-block;
+    width: fit-content;
+    background-color: #191a19;
+    color: grey;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.stock-card .background-cover {
+    border-radius: 8px;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+.stock-recommendation {
+    opacity: 0.5;
+    background: transparent;
+}
+
+.stock-recommendation-link {
+    display: none;
+}
+
+.stock-card .small-text {
+    font-size:14px;
+}
+
+/* External Account icon */
+.external-account {
+    width: fit-content;
+    background-color: #d8e9a84a;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Stop Loss (Protection) Badge */
+.stop-loss-badge {
+    width: fit-content;
+    background-color: #191a19;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.stop-loss-badge h6 {
+    font-weight: normal;
+}
+
+/* Auto invest badge */
+.auto-invest-badge {
+    width: fit-content;
+    background-color: #292929;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
